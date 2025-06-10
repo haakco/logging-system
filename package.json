@@ -11,6 +11,16 @@
     "./store": "./store/loggingReducer.ts",
     "./types": "./types/index.ts"
   },
+  "scripts": {
+    "dev": "vitest --watch",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "build": "tsc --noEmit",
+    "lint": "npm run lint:prettier && npm run lint:eslint",
+    "lint:eslint": "eslint . --cache --fix",
+    "lint:prettier": "prettier --write '**/*.{ts,tsx,js,jsx,json,md}'",
+    "type-check": "tsc --noEmit"
+  },
   "repository": {
     "type": "git",
     "url": "github:haakco/logging-system"
@@ -32,7 +42,24 @@
     "@mantine/hooks": "^7.0.0"
   },
   "devDependencies": {
-    "@types/react": "^18.0.0"
+    "@eslint/js": "^9.28.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^18.3.23",
+    "@vitest/coverage-v8": "^2.1.0",
+    "eslint": "^9.28.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.1",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-unused-imports": "^4.1.4",
+    "jsdom": "^25.0.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.33.0",
+    "vitest": "^2.1.0"
   },
   "files": [
     "index.ts",
@@ -40,6 +67,7 @@
     "components",
     "store",
     "types",
-    "__tests__"
+    "__tests__",
+    "README.md"
   ]
 }
