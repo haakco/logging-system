@@ -1,0 +1,45 @@
+{
+  "name": "@haakco/logging-system",
+  "version": "1.0.0",
+  "description": "Comprehensive logging framework with UI controls, Redux integration, and multiple log levels",
+  "type": "module",
+  "main": "./index.ts",
+  "exports": {
+    ".": "./index.ts",
+    "./core": "./core/Logger.ts",
+    "./components": "./components/LoggingControl.tsx",
+    "./store": "./store/loggingReducer.ts",
+    "./types": "./types/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github:haakco/logging-system"
+  },
+  "keywords": [
+    "logging",
+    "react",
+    "redux",
+    "development",
+    "debugging",
+    "typescript"
+  ],
+  "author": "HaakCo",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "@reduxjs/toolkit": "^2.0.0",
+    "@mantine/core": "^7.0.0",
+    "@mantine/hooks": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0"
+  },
+  "files": [
+    "index.ts",
+    "core",
+    "components",
+    "store",
+    "types",
+    "__tests__"
+  ]
+}
